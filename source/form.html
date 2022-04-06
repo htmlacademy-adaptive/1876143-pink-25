@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+  <body class="page__body">
+    <header class="form-header">
+      <div class="form-header__navigaition-block">
+        <a class="logo" href="#">
+          <img class="logo__logo-image" src="#" alt="пинк" width="" height="">
+          <svg class="logo__logo-icon"></svg>
+        </a>
+        <button class="toggle" type="button">
+          <span class="visually-hidden">открыть меню</span>
+        </button>
+      </div>
+      <div class="form-main-navigation-wrapper">
+        <nav class="form-main-navigation">
+            <ul class="form-main-navigation__list site-list">
+              <li class="site-list__item">
+               <a class="site-link" href="#">Главная</a>
+              </li>
+             <li class="site-list__item">
+               <a class="site-link" href="#">Фотографии</a>
+             </li>
+              <li class="site-list__item">
+               <a class="site-link" href="#">Конкурс</a>
+             </li>
+              <li class="site-list__item">
+                <a class="site-link" href="#">HTML academy</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+        <h1 class="catalog-header__page-title">Конкурс на самое
+          безбашенное
+          путешествие с Пинк</h1>
+    </header>
+    <main class="form-main-container">
+      <section class="forms">
+        <h2 class="visually-hidden">формы для заполнения.</h2>
+        <div class="forms__invitation-wrapper">
+          <p class="forms__invitation-text">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+        </div>
+        <form class="main-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="main-form__name">
+            <label><span>фамилия</span>:
+              <input type="text" placeholder="Укажите фамилию *" required>
+            </label>
+            <label><span>имя</span>:
+              <input type="text" placeholder="Укажите ваше имя *" required>
+            </label>
+            <label><span>отчество</span>:
+              <input type="text" placeholder="Ну и отчество тоже">
+            </label>
+          </fieldset>
+          <fieldset class="main-form__achivements">
+            <legend>Ваши безбашенные
+              достижения в путешествии</legend>
+              <label>Сделал селфи с акулой
+                <input type="checkbox" checked>
+              </label>
+              <label>Обгорел на пляже
+                <input type="checkbox" checked>
+              </label>
+              <label>Видел Чака Норриса
+                <input type="checkbox">
+              </label>
+              <label>Накупил сувениров
+                <input type="checkbox">
+              </label>
+              <label>Удержал башню
+                <input type="checkbox" checked>
+              </label>
+              <label>Разгромил отель
+                <input type="checkbox">
+              </label>
+          </fieldset>
+          <fieldset class="main-form__contacts">
+            <label>номер телефона
+              <input type="tel" placeholder="Номер, пожалуйста">
+            </label>
+            <label>адрес почты
+              <input type="email" placeholder="Введите почту *" required>
+            </label>
+          </fieldset>
+          <fieldset class="main-form__apps">
+            <legend>C какими приложениями путешествовали?</legend>
+            <label>Pink для iOS
+              <input type="radio" checked>
+            </label>
+            <label>Pink на Android
+              <input type="radio">
+            </label>
+            <label>Windows Phone
+              <input type="radio">
+            </label>
+          </fieldset>
+          <fieldset class="main-form__emotions">
+            <legend>опишите свои эмоции</legend>
+            <textarea cols="30" rows="10" placeholder="Можно прям в красках, не
+            стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="main-form__button" type="submit">отправить форму</button>
+        </form>
+        <span class="forms__explanation">* — обязательные поля</span>
+      </section>
+    </main>
+    <footer class="form-footer">
+      <div class="form-footer__wrapper">
+        <div class="form-footer__logo">
+          <a class="logo logo--dark" href="#">
+            <img class="logo__logo-image logo__logo-image--dark" src="#" alt="пинк" width="" height="">
+           <svg class="logo__logo-icon logo__logo-icon--dark"></svg>
+          </a>
+        </div>
+        <div class="form-footer__social social">
+          <ul class="form-footer__social-list">
+            <li class="form-footer__social-item">
+              <a class="form-footer__social-link social-link--vk" href="#"></a>
+            </li>
+            <li class="form-footer__social-item">
+              <a class="form-footer__social-link social-link--telegram" href="#"></a>
+            </li>
+            <li class="form-footer__social-item">
+              <a class="form-footer__social-link social-link--ytube" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="#">
+            <img class="copyright__image" src="#" alt="логотип htmlacademy">
+          </a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
