@@ -1,0 +1,574 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open-Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: light;
+  font-weight: 300;
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-display: swap;
+}
+.main-body {
+  width: 320px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: light;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #173c70;
+  background-image: url(/source/img/back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-header__navigation-block {
+  padding: 22px 20px 21px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header__wrapper {
+  padding: 0 20px;
+}
+
+.main-header__slogan {
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+  text-align: center;
+}
+
+.represent {
+  background-color: #1D2631;
+  padding: 0 20px;
+}
+
+.represent__text-content {
+  text-align: center;
+}
+
+.represent__list {
+  justify-content: space-around;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.represent__explanation {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.button-download {
+  background: none;
+  border: none;
+}
+
+.button-download__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.suggestions__wrapper {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.suggestions__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: light;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #283645;
+}
+
+.suggestions__list {
+  list-style: none;
+  padding: 0;
+}
+
+.suggestions__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000;
+}
+
+.suggestions__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #283645;
+}
+
+.reviews__wrapper {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+}
+
+.reviews__quote {
+  margin: 0;
+}
+
+.reviews__quote-text {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.reviews__quote-author {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  padding: 0;
+  border: 0;
+}
+.slider__toggle--active {
+  outline: 3px solid #283645;
+}
+
+.slider__toggles {
+  text-align: center;
+}
+
+.price__tariff-plan {
+  background-color: #283645;
+}
+
+.price__tariff-plan-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.price__tariff-plan-number {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.price__facilities-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.contacts__wrapper {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.contacts__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 55px;
+  color: #283645;
+  text-align: center;
+}
+
+.contacts__explanation-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #283645;
+  text-align: center;
+}
+
+.contacts__phone-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #D22856;
+  text-align: center;
+  text-decoration: none;
+}
+
+.copyright__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+}
+
+.footer__wrapper {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer__social-list {
+  list-style: none;
+}
+
+.catalog-body {
+  width: 320px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: light;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.catalog-header {
+  background-color: #173c70;
+  background-image: url(/source/img/back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 84px;
+}
+
+.catalog-header__navigaition-block {
+  padding: 22px 20px 21px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-header__page-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: white;
+  text-align: center;
+  margin: 0 54px 0 54px;
+}
+
+.photoes-of-users__invitation-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+}
+
+.photoes-of-users__invitation-wrapper {
+  padding: 0 20px;
+}
+
+.photo-of-day__image-block {
+  width: 320px;
+  height: 137px;
+  background-image: url(/source/img/panorama-photo-of-day.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-of-day__mark {
+  background-color: #D22856;
+}
+
+.photo-of-day__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.photo-of-day__wrapper {
+  padding: 0 20px;
+}
+
+.photoes-all-users {
+  padding: 0 20px;
+}
+
+.photoes-all-users__list {
+  list-style: none;
+  padding: 0;
+}
+
+.quote {
+  margin: 0;
+  text-align: left;
+  padding: 0 17px;
+}
+
+.quote__author-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.quote__time-public {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.quote__comment {
+  margin: 0;
+}
+
+.quote__comment-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.likes {
+  padding: 0 17px;
+}
+
+.likes__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #D22856;
+}
+
+.likes__number {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #D22856;
+}
+
+.your-post {
+  padding: 0 20px;
+}
+
+.your-post__post-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #D22856;
+  text-align: center;
+}
+
+.your-post__cancel-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #283645;
+  opacity: 0.1;
+  text-align: center;
+}
+
+.your-post__separator {
+  width: 100%;
+  height: 2px;
+  background-color: #283645;
+  opacity: 0.1;
+}
+
+.edit-image-buttons-list {
+  list-style: none;
+  display: flex;
+}
+
+.form-body {
+  width: 320px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-header {
+  background-color: #173c70;
+  background-image: url(/source/img/back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 84px;
+}
+
+.form-header__navigaition-block {
+  padding: 22px 20px 21px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.forms__wrapper {
+  padding: 0 22px;
+}
+
+.forms__invitation-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+}
+
+.forms__explanation {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.main-form__personal-data {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #D22856;
+}
+
+.main-form__name {
+  border: none;
+  padding: 0;
+}
+
+.main-form__achivements {
+  border: none;
+  padding: 0;
+}
+
+.main-form__contacts {
+  border: none;
+  padding: 0;
+}
+
+.main-form__apps {
+  border: none;
+  padding: 0;
+}
+
+.main-form__emotions {
+  border: none;
+  padding: 0;
+}
+
+.main-form__input {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.main-form__achivements-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.main-form__apps-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.main-form-button-submit {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */
