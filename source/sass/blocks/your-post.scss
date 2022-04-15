@@ -1,0 +1,29 @@
+.your-post {
+  padding: 0 20px;
+}
+
+.your-post__post-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #D22856;
+  text-align: center;
+}
+
+.your-post__cancel-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #283645;
+  opacity: 0.1;
+  text-align: center;
+}
+
+.your-post__separator {
+  width: 100%;
+  height: 2px;
+  background-color: #283645;
+  opacity: 0.1;
+}

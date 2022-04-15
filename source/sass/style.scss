@@ -1,2 +1,28 @@
-@use "fonts.scss";
-@use "body.scss";
+@use "./blocks/fonts.scss";
+@use "./blocks/main-body.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/represent.scss";
+@use "./blocks/button-download.scss";
+@use "./blocks/suggestions.scss";
+@use "./blocks/reviews.scss";
+@use "./blocks/slider.scss";
+@use "./blocks/price.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/copyright.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/catalog-body.scss";
+@use "./blocks/catalog-header.scss";
+@use "./blocks/photoes-of-users.scss";
+@use "./blocks/photo-of-day.scss";
+@use "./blocks/photoes-all-users.scss";
+@use "./blocks/quote.scss";
+@use "./blocks/likes.scss";
+@use "./blocks/your-post.scss";
+@use "./blocks/edit-image-buttons-list.scss";
+@use "./blocks/form-body.scss";
+@use "./blocks/form-header.scss";
+@use "./blocks/forms.scss";
+@use "./blocks/main-form.scss";
+@use "./blocks/main-form-button-submit.scss";
+
+
