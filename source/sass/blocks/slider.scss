@@ -1,0 +1,16 @@
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  padding: 0;
+  border: 0;
+
+  &--active {
+    outline: 3px solid #283645;
+  }
+
+}
+
+.slider__toggles {
+  text-align: center;
+}

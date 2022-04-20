@@ -1,0 +1,24 @@
+.photo-of-day__image-block {
+  width: 320px;
+  height: 137px;
+  background-image: url(/source/img/panorama-photo-of-day.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-of-day__mark {
+  background-color: #D22856;
+}
+
+.photo-of-day__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.photo-of-day__wrapper {
+  padding: 0 20px;
+}

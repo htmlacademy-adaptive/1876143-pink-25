@@ -1,1 +1,30 @@
-// Начните писать стили здесь
+@import "../variables.scss";
+@import "./blocks/fonts.scss";
+@import "./blocks/main-body.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/represent.scss";
+@import "./blocks/button-download.scss";
+@import "./blocks/suggestions.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/price.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/catalog-body.scss";
+@import "./blocks/catalog-header.scss";
+@import "./blocks/photoes-of-users.scss";
+@import "./blocks/photo-of-day.scss";
+@import "./blocks/photoes-all-users.scss";
+@import "./blocks/quote.scss";
+@import "./blocks/likes.scss";
+@import "./blocks/your-post.scss";
+@import "./blocks/edit-image-buttons-list.scss";
+@import "./blocks/form-body.scss";
+@import "./blocks/form-header.scss";
+@import "./blocks/forms.scss";
+@import "./blocks/main-form.scss";
+@import "./blocks/main-form-button-submit.scss";
+
+
+
