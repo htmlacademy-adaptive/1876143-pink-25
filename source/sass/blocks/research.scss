@@ -1,0 +1,30 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .research__wrapper {
+    padding: 0 20px;
+    display: flex;
+  }
+
+  .research {
+    display: block;
+  }
+
+  .research__explanation {
+    margin-left: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research__wrapper {
+    padding: 0 130px;
+    display: flex;
+  }
+
+  .research {
+    display: block;
+    background-color: #F2F2F2;
+  }
+}

@@ -4,14 +4,25 @@
   background-image: url(/source/img/back-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header__navigation-block {
   padding: 22px 20px 21px;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: rgb(0, 0, 0, 0.3);
+}
+
+.main-header__navigation-block-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__open-navigation-list-wrapper {
+  display: none;
 }
 
 .main-header__slogan {
@@ -20,4 +31,46 @@
   color: white;
   text-align: center;
   padding: 0 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-header__image {
+    display: none;
+  }
+
+  .main-header__wrapper {
+    background-image: url(/source/img/mobile-in-hand.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .main-header__slogan {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation-toggle {
+    display: none;
+  }
+
+  .main-header__navigation-block {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px 20px 21px;
+  }
+
+  .main-header__open-navigation-list-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-header__wrapper {
+    padding: 0 130px;
+  }
+
+  .main-header__slogan {
+    width: 300px;
+  }
 }

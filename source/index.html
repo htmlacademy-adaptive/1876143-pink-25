@@ -3,6 +3,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
@@ -11,6 +12,7 @@
 <body class="main-body">
   <header class="main-header">
     <div class="main-header__navigation-block">
+      <div class="main-header__navigation-block-wrapper">
     <a class="logo" href="#">
         <svg class="logo__logo-icon" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z" fill="white"/>
@@ -25,30 +27,30 @@
         </svg>
       <span class="visually-hidden">открыть меню</span>
     </button>
+      </div>
+    <div class="main-header__open-navigation-list-wrapper">
+      <nav class="main-navigation">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML academy</a>
+            </li>
+          </ul>
+      </nav>
+      </div>
     </div>
     <div class="main-header__wrapper">
-    <p class="main-header__slogan info-text-on-page">Взгляните на жизнь
-      иначе!</p>
+      <p class="main-header__slogan info-text-on-page">Взгляните на жизнь
+        иначе!</p>
       <img class="main-header__image" src="../source/img/mobile-in-hand.png" alt="телефон в руке." width="320" height="286">
-    <div class="main-navigation-wrapper">
-    <nav class="main-navigation visually-hidden">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML academy</a>
-          </li>
-        </ul>
-    </nav>
-    </div>
-    </div>
       <div class="represent">
         <h1 class="visually-hidden">Пинк-удивительное приложение</h1>
         <div class="represent__text-content">
@@ -81,7 +83,7 @@
           <p class="represent__explanation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
-
+    </div>
   </header>
   <main class="main-container">
     <section class="suggestions">
@@ -89,31 +91,40 @@
       <h2 class="visually-hidden">вот что мы предлагаем</h2>
         <span class="suggestions__text">Устали от серости мегаполиса?</span>
         <span class="suggestions__text">Нам есть, что вам предложить!</span>
-        <ul class="suggestions__list">
+        <div class="suggestions-lists">
+         <ul class="suggestions__list">
             <li class="suggestions__item">
-              <img class="suggestion__image visually-hidden" src="#" alt="#" >
               <h3 class="suggestions__title">Поднимает настроение</h3>
               <p class="suggestions__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="suggestions__item">
-              <img class="suggestion__image visually-hidden" src="#" alt="#" >
               <h3 class="suggestions__title">Меняет мир вокруг</h3>
               <p class="suggestions__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="suggestions__item">
-              <img class="suggestion__image visually-hidden" src="#" alt="#" >
               <h3 class="suggestions__title">Заводит новых друзей</h3>
               <p class="suggestions__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
-            <img class="suggestion__image-low" src="../source/img/mobile-hellow.jpg" alt="#" >
-        </ul>
+         </ul>
+         <ul class="suggestion__images-list">
+            <li class="suggestion__images-item">
+              <img class="suggestion-image-smile" src="../source/img/mobile-hellow.jpg" alt="#" >
+            </li>
+            <li class="suggestion__images-item">
+              <img class="suggestion-image" src="../source/img/mobile-hellow.jpg" alt="#" >
+            </li>
+            <li class="suggestion__images-item">
+              <img class="suggestion-image" src="../source/img/mobile-hellow.jpg" alt="#" >
+            </li>
+         </ul>
+         </div>
       </div>
     </section>
-    <section class="research visually-hidden">
+    <section class="research">
       <div class="research__wrapper">
-        <h2 class="visually-hidden">исследования приложения</h2>
-        <img class="research__image visually-hidden" src="#" alt="круговая диаграмма в виде часов" >
+        <img class="research__image" src="/source/img/round diagram.png" alt="круговая диаграмма в виде часов" width="238" height="276" >
         <div class="research__explanation">
+          <h2 class="">исследования приложения</h2>
           <span class="research__title-explanation visually-hidden">Эффект
             на 24 часа!</span>
           <p class="research__text-explanation">Британские ученые провели исследования
@@ -124,16 +135,24 @@
       </div>
     </section>
     <section class="reviews">
+      <svg class="reviews__image-quotes" width="79" height="63" viewBox="0 0 79 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M35.1468 6.97257L30.8388 0C28.3886 1.48142 0 12.0588 0 39.1293C0 46.2698 0.341426 63 18.9793 63C30.2162 63 32.9778 52.8473 32.9778 49.5783C32.9778 27.8508 11.5081 35.5838 11.5081 35.5838C11.5081 17.7771 31.3911 9.06631 35.1468 6.97257Z" fill="#EFEFEF"/>
+        <path d="M79 6.97257L74.7322 0C72.302 1.48142 43.8833 12.0588 43.8833 39.1293C43.8833 46.2698 44.2247 63 62.8726 63C74.0995 63 76.8611 52.8473 76.8611 49.5783C76.8611 27.8508 55.3914 35.5838 55.3914 35.5838C55.3914 17.7771 75.3146 9.06631 79 6.97257Z" fill="#EFEFEF"/>
+        </svg>
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">отзывы</h2>
+        <button class="reviews__arrow-left" type="button"></button>
         <ul class="reviews__list">
           <li class="reviews__item slider__item">
             <figure class="reviews__quote">
-              <figcaption class="reviews__quote-author">Николай Петров</figcaption>
+              <figcaption class="reviews__quote-author">
+                <span class="reviews__quote-author-name">Николай Петров</span>
+                <span class="reviews__about-author">25 лет, водитель трамвая</span></figcaption>
               <blockquote class="reviews__quote-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
             </figure>
           </li>
         </ul>
+        <button class="reviews__arrow-right" type="button"></button>
         <div class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--active" type="button"></button>
           <button class="slider__toggle" type="button"></button>
@@ -145,8 +164,9 @@
       <div class="price__wrapper">
         <h2 class="visually-hidden">стоимость</h2>
         <div class="price__table">
+          <div class="price__tariff-plan-wrapper">
           <di class="price__empty-cell"></di>
-          <div class="price__tariff-plan">
+          <div class="price__tariff-plan price__tariff-plan-hidden">
             <dl class="price__tariff-plan-list">
               <dt class="price__tariff-plan-text">База</dt>
               <dd class="price__tariff-plan-number">1,99 USD</dd>
@@ -154,15 +174,16 @@
           </div>
           <div class="price__tariff-plan">
             <dl>
-              <dt class="price__tariff-plan-text">СТАНДАРТ</dt>
+              <dt class="price__tariff-plan-text">Стандарт</dt>
               <dd class="price__tariff-plan-number">3,99 USD</dd>
             </dl>
           </div>
-          <div class="price__tariff-plan">
+          <div class="price__tariff-plan price__tariff-plan-hidden">
             <dl>
-              <dt class="price__tariff-plan-text">АНЛИМ</dt>
+              <dt class="price__tariff-plan-text">Анлим</dt>
               <dd class="price__tariff-plan-number">9,99 USD</dd>
             </dl>
+          </div>
           </div>
           <div class="price__facilities">
             <span class="price__facilities-text">Розовый фильтр</span>
@@ -193,8 +214,10 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">контакты</h2>
-        <span class="contacts__text">Остались вопросы?</span>
-        <span class="contacts__text">Свяжитесь с нами!</span>
+        <div class="contacts__question">
+         <span class="contacts__text">Остались вопросы?</span>
+         <span class="contacts__text">Свяжитесь с нами!</span>
+        </div>
         <div class="contacts__ways">
           <div class="contacts__phone">
             <span class="contacts__explanation-text">Звоните:</span>
@@ -209,11 +232,11 @@
             <address class="contacts__phone-link">ул. Большая
               Конюшенная, 19/8</address>
           </div>
-          <map class="contacts__map" name="map">
-            <area shape="#" coords="#" href="#" alt="#">
-          </map>
         </div>
       </div>
+      <map class="contacts__map" name="map">
+        <area shape="#" coords="#" href="#" alt="#">
+      </map>
     </section>
   </main>
   <footer class="footer">

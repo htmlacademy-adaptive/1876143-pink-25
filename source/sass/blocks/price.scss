@@ -1,5 +1,12 @@
+.price__table {
+  display: grid;
+}
+
 .price__tariff-plan {
   background-color: #283645;
+}
+.price__tariff-plan-hidden {
+  display: none;
 }
 
 .price__tariff-plan-text {
@@ -9,6 +16,7 @@
   line-height: 30px;
   color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .price__tariff-plan-number {
@@ -26,4 +34,22 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .price__empty-cell {
+    width: 25%;
+  }
+
+  .price__tariff-plan {
+    width: 25%;
+  }
+
+  .price__tariff-plan-wrapper {
+    display: flex;
+  }
+
+  .price__tariff-plan-hidden {
+    display: block;
+  }
 }

@@ -22,3 +22,10 @@
   color: #fff;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .represent {
+    width: 320px;
+    background-color: rgb(29, 38, 49,  0);
+  }
+}
