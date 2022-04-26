@@ -1,8 +1,19 @@
 .footer__wrapper {
   padding: 0 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__social-list {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
