@@ -30,3 +30,9 @@
   line-height: 24px;
   color: #283645;
 }
+
+@media (min-width: $tablet-width) {
+  .quote {
+    padding: 0 38px 0 30px;
+  }
+}

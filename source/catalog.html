@@ -26,7 +26,7 @@
       </button>
     </div>
       <div class="catalog-navigation-wrapper">
-        <nav class="catalog-main-navigation visually-hidden">
+        <nav class="catalog-main-navigation catalog-main-navigation--hidden">
           <ul class="catalog-main-navigation__list site-list">
            <li class="site-list__item">
             <a class="site-link" href="#">Главная</a>
@@ -71,7 +71,7 @@
                     перископе, задавайте свои вопросы!</p>
                 </blockquote>
               </figure>
-                <div class="likes">
+                <div class="photo-of-day__likes">
                   <span class="likes__text">нравится:</span>
                   <span class="likes__number">215</span>
                 </div>
@@ -165,23 +165,33 @@
             </div>
          </li>
         </ul>
-        <p class="photoes-all-users__invitation-text">Затмите их всех!
-        Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="photoes-all-users__invitation">
+          <p class="photoes-all-users__invitation-text">Затмите их всех!</p>
+          <p class="photoes-all-users__invitation-text">Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
       </section>
       <section class="your-post">
       <h2 class="visually-hidden">Ваш пост</h2>
       <div class="your-post__wrapper">
        <img class="your-post__image" src="/source/img/snow-road.jpg" width="280" height="374" alt="зимняя дорога.">
+       <div class="your-post__control">
        <ul class="edit-image-buttons-list">
-        <li class="edit-imagebuttons-item">
+        <li class="edit-image-buttons-item">
           <button class="crop crop--active" type="button">
             <svg class="crop__svg crop__svg--active" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#D22856"/>
               </svg>
             <span class="visually-hidden">обрезать</span>
           </button>
+          <div class="range-scale range-scale--hidden">
+            <div class="range-scale__range-bar"></div>
+            <button class="range-scale__range-toggle" type="button">
+              <span class="visually-hidden">изменить параметр</span>
+            </button>
+           </div>
+          <div class="your-post__separator your-post__separator-hidden"></div>
         </li>
-        <li class="edit-imagebuttons-item">
+        <li class="edit-image-buttons-item">
           <button class="fill" type="button">
             <span class="visually-hidden">заливка</span>
             <svg class="fill__svg fill__svg--active" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,8 +201,15 @@
               </g>
               </svg>
           </button>
+          <div class="range-scale range-scale--hidden">
+            <div class="range-scale__range-bar"></div>
+            <button class="range-scale__range-toggle" type="button">
+              <span class="visually-hidden">изменить параметр</span>
+            </button>
+           </div>
+          <div class="your-post__separator your-post__separator-hidden"></div>
         </li>
-        <li class="edit-imagebuttons-item">
+        <li class="edit-image-buttons-item">
           <button class="contrast" type="button">
             <svg class="contrast__svg contrast__svg--active" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.3">
@@ -202,22 +219,32 @@
               </svg>
             <span class="visually-hidden">контрастность</span>
           </button>
+          <div class="range-scale range-scale--hidden">
+            <div class="range-scale__range-bar"></div>
+            <button class="range-scale__range-toggle" type="button">
+              <span class="visually-hidden">изменить параметр</span>
+            </button>
+           </div>
+          <div class="your-post__separator your-post__separator-hidden"></div>
         </li>
        </ul>
-         <div class="range-scale">
+         <div class="range-scale range-scale--delete">
           <div class="range-scale__range-bar"></div>
           <button class="range-scale__range-toggle" type="button">
             <span class="visually-hidden">изменить параметр</span>
           </button>
          </div>
+         <div class="your-post__separator your-post__separator--hidden"></div>
+           <div class="your-post__post-buttons">
+             <button class="your-post__post" type="submit">
+              <span class="your-post__post-text" >запостить</span>
+             </button>
+             <button class="your-post__cancel" type="reset">
+              <span class="your-post__cancel-text">отмена</span>
+             </button>
+           </div>
+       </div>
       </div>
-        <div class="your-post__separator"></div>
-        <button class="your-post__post" type="submit">
-          <span class="your-post__post-text" >запостить</span>
-        </button>
-        <button class="your-post__cancel" type="reset">
-          <span class="your-post__cancel-text">отмена</span>
-        </button>
       </section>
     </section>
   </main>

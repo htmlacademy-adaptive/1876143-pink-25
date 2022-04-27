@@ -26,7 +26,7 @@
         </button>
       </div>
       <div class="form-main-navigation-wrapper">
-        <nav class="form-main-navigation visually-hidden">
+        <nav class="form-main-navigation form-main-navigation--hidden">
             <ul class="form-main-navigation__list site-list">
               <li class="site-list__item">
                <a class="site-link" href="#">Главная</a>
@@ -54,15 +54,15 @@
           <p class="forms__invitation-text">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
         <form class="main-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="main-form__name">
-            <label>
-              <span class="main-form__personal-data">фамилия</span>:
+            <label class="main-form__name-part">
+              <span class="main-form__personal-data">фамилия :</span>
               <input class="main-form__input" type="text" placeholder="Укажите фамилию *" required>
             </label>
-            <label>
-              <span class="main-form__personal-data">имя</span>:
+            <label class="main-form__name-part">
+              <span class="main-form__personal-data">имя :</span>
               <input class="main-form__input" type="text" placeholder="Укажите ваше имя *" required>
             </label>
-            <label>
+            <label class="main-form__name-part">
               <span class="main-form__personal-data">отчество:</span>
               <input class="main-form__input" type="text" placeholder="Ну и отчество тоже">
             </label>
@@ -71,44 +71,54 @@
             <legend class="main-form__personal-data">Ваши безбашенные
               достижения в путешествии</legend>
               <label class="main-form__achivements-text">
+                <input type="checkbox" checked>
                 Сделал селфи с акулой
+              </label>
+              <label class="main-form__achivements-text">
                 <input type="checkbox" checked>
+                Обгорел на пляже
               </label>
-              <label class="main-form__achivements-text">Обгорел на пляже
+              <label class="main-form__achivements-text">
+                <input type="checkbox">
+                Видел Чака Норриса
+              </label>
+              <label class="main-form__achivements-text">
+                <input type="checkbox">
+                Накупил сувениров
+              </label>
+              <label class="main-form__achivements-text">
                 <input type="checkbox" checked>
+                Удержал башню
               </label>
-              <label class="main-form__achivements-text">Видел Чака Норриса
+              <label class="main-form__achivements-text">
                 <input type="checkbox">
-              </label>
-              <label class="main-form__achivements-text">Накупил сувениров
-                <input type="checkbox">
-              </label>
-              <label class="main-form__achivements-text">Удержал башню
-                <input type="checkbox" checked>
-              </label>
-              <label class="main-form__achivements-text">Разгромил отель
-                <input type="checkbox">
+                Разгромил отель
               </label>
           </fieldset>
           <fieldset class="main-form__contacts">
-            <label>
+            <legend class="main-form__personal-data main-form__personal-data--hidden ">контактная информация</legend>
+            <label class="main-form__contacts-phone">
               <span class="main-form__personal-data">номер телефона</span>
               <input class="main-form__input" type="tel" placeholder="Номер, пожалуйста">
             </label>
-            <label><span class="main-form__personal-data">адрес почты</span>
+            <label class="main-form__contacts-mail">
+              <span class="main-form__personal-data">адрес почты</span>
               <input class="main-form__input" type="email" placeholder="Введите почту *" required>
             </label>
           </fieldset>
           <fieldset class="main-form__apps">
             <legend class="main-form__personal-data">C какими приложениями путешествовали?</legend>
-            <label class="main-form__apps-text">Pink для iOS
+            <label class="main-form__apps-text">
               <input type="radio" checked>
+              Pink для iOS
             </label>
-            <label class="main-form__apps-text">Pink на Android
+            <label class="main-form__apps-text">
               <input type="radio">
+              Pink на Android
             </label>
-            <label class="main-form__apps-text">Windows Phone
+            <label class="main-form__apps-text">
               <input type="radio">
+              Windows Phone
             </label>
           </fieldset>
           <fieldset class="main-form__emotions">
@@ -116,10 +126,12 @@
             <textarea class="main-form__input" cols="30" rows="10" placeholder="Можно прям в красках, не
             стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="main-form-button-submit" type="submit">отправить форму</button>
+          <div class="main-form__final-block">
+            <button class="main-form-button-submit" type="submit">отправить форму</button>
+            <span class="main-form__explanation">* — обязательные поля</span>
+          </div>
         </form>
       </div>
-      <span class="forms__explanation">* — обязательные поля</span>
       </section>
     </main>
     <footer class="footer">

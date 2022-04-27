@@ -1,0 +1,10 @@
+.form-main-navigation {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .form-main-navigation {
+    display: block;
+    padding-right: 130px;
+  }
+}

@@ -12,3 +12,16 @@
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: $desktop-width) {
+  .form-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .form-header__navigaition-block {
+    padding-left: 130px;
+    padding-top: 48px;
+  }
+}

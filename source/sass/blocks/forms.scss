@@ -1,5 +1,5 @@
-.forms__wrapper {
-  padding: 0 22px;
+.forms {
+  padding: 0 20px;
 }
 
 .forms__invitation-text {
@@ -18,4 +18,14 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #283645;
+}
+
+@media (min-width: $desktop-width) {
+  .forms__wrapper {
+    padding: 0 132px;
+  }
+
+  .forms {
+    padding: 0;
+  }
 }
