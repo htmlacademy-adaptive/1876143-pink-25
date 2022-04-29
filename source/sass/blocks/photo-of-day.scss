@@ -1,13 +1,19 @@
 .photo-of-day__image-block {
-  width: 320px;
-  height: 137px;
+  min-height: 137px;
   background-image: url(/source/img/panorama-photo-of-day.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.photo-of-day__likes {
+  padding: 0 17px;
+}
+
 .photo-of-day__mark {
   background-color: #D22856;
+  width: 140px;
+  text-align: center;
+  margin-left: auto;
 }
 
 .photo-of-day__text {
@@ -17,8 +23,27 @@
   line-height: 24px;
   color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .photo-of-day__wrapper {
   padding: 0 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .photo-of-day__image-block {
+    padding: 70px 20px 0;
+    background-size: cover;
+  }
+
+  .photo-of-day__wrapper {
+    position: relative;
+  }
+
+  .photo-of-day__likes {
+    position: absolute;
+    top: 0;
+    right: 30px;
+  }
 }

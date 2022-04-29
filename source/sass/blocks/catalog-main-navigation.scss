@@ -1,0 +1,13 @@
+.catalog-main-navigation {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-main-navigation {
+    display: block;
+  }
+
+  .catalog-main-navigation__list {
+    justify-content: space-around;
+  }
+}

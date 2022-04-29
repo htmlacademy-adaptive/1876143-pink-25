@@ -7,29 +7,60 @@
   color: #D22856;
 }
 
+.main-form__personal-data {
+  &--hidden {
+    display: none;
+  }
+}
+
 .main-form__name {
   border: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.main-form__name-part {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-form__achivements {
   border: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .main-form__contacts {
   border: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .main-form__apps {
   border: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .main-form__emotions {
   border: none;
   padding: 0;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .main-form__input {
@@ -54,4 +85,137 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+
+.main-form__final-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+  }
+
+  .main-form__name {
+    align-items: end;
+  }
+
+  .main-form__contacts {
+    border: 2px solid #E5E5E5;
+    grid-row: 3/4;
+  }
+
+  .main-form__contacts-phone {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-form__contacts-mail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-form__personal-data {
+    order: 2;
+  }
+
+  .main-form__apps {
+    border: 2px solid #E5E5E5;
+    grid-row: 2/3;
+    background-color: #FFFFFF;
+  }
+
+  .main-form__emotions {
+    border: 2px solid #E5E5E5;
+    padding-left: 60px;
+    padding-top: 47px;
+    padding-bottom: 53px;
+    padding-right: 60px;
+  }
+
+  .main-form__name-part {
+    display: block;
+  }
+
+  .main-form__achivements {
+    border: 2px solid #E5E5E5;
+    background-color: #FFFFFF;
+  }
+
+  .main-form__input {
+    width: 496px;
+  }
+
+  .main-form__final-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .main-form__name {
+    grid-column: 1/2;
+  }
+
+  .main-form__achivements {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-form__contacts {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-form__apps {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .main-form__emotions {
+    grid-column: 1/3;
+  }
+
+  .main-form__final-block {
+    grid-column: 1/3;
+  }
+
+  .main-form__personal-data {
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .main-form__achivements-text {
+    width: 30%;
+  }
+
+  .main-form__input {
+    width: 336px;
+    order: 2;
+  }
+
+  .main-form__name-part {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-main-navigation__list {
+    justify-content: space-around;
+  }
 }

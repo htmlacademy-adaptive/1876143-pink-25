@@ -1,4 +1,13 @@
 .edit-image-buttons-list {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .edit-image-buttons-list {
+    flex-direction: column;
+  }
 }

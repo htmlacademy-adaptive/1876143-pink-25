@@ -21,5 +21,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     flex-direction: row;
+    padding-top: 48px;
+    padding-bottom: 49px;
   }
 }
