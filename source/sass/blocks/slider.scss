@@ -13,4 +13,16 @@
 
 .slider__toggles {
   text-align: center;
+  margin: 0 auto;
+  width: 58px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+
+@media (min-width: $desktop-width) {
+  .slider__toggles {
+    display: none;
+  }
 }

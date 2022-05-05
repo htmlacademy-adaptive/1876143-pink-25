@@ -1,0 +1,18 @@
+@media (min-width: $tablet-width) {
+  .logo::before {
+    content: "";
+    background-image: url(/source/img/logotype-white-tablet.svg);
+    width: 60px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    right: 87px;
+    bottom: -1px;
+  }
+
+  .logo {
+    padding-left: 73px;
+    position: relative;
+    height: 33px;
+  }
+}

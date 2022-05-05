@@ -21,17 +21,28 @@
   justify-content: space-between;
 }
 
-.main-header__open-navigation-list-wrapper {
-  display: none;
-}
-
 .main-header__slogan {
   font-size: 24px;
   line-height: 29px;
   color: white;
   text-align: center;
   padding: 0 20px;
+  margin: 30px 0 34px;
 }
+
+.main-header__image {
+  display: block;
+}
+
+@media (min-width: 1px) and (max-width: 1999px) {
+  .main-header__open-navigation-list-wrapper {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    }
+  }
 
 
 @media (min-width: $tablet-width) {
@@ -40,13 +51,16 @@
   }
 
   .main-header__wrapper {
-    background-image: url(/source/img/mobile-in-hand.png);
+    background-image: url(/source/img/phone-in-hand-tablet.svg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom;
+    padding-top: 132px;
   }
 
   .main-header__slogan {
     width: 300px;
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 
@@ -58,12 +72,17 @@
   .main-header__navigation-block {
     flex-direction: row;
     justify-content: space-between;
-    padding: 22px 20px 21px;
+    padding: 22px 130px 21px;
   }
 
   .main-header__open-navigation-list-wrapper {
     display: flex;
     flex-direction: row;
+    position:sticky;
+  }
+
+  .main-header__navigation-block-wrapper {
+    margin-right: 173px;
   }
 
   .main-header__wrapper {

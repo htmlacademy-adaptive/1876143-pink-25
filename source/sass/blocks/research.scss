@@ -3,17 +3,49 @@
 }
 
 @media (min-width: $tablet-width) {
-  .research__wrapper {
-    padding: 0 20px;
-    display: flex;
-  }
-
   .research {
     display: block;
   }
 
+  .research__wrapper {
+    padding: 35px 20px 109px;
+    display: flex;
+  }
+
+  .research__title {
+    display: none;
+  }
+
   .research__explanation {
     margin-left: 72px;
+  }
+
+  .research__title-explanation {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  .research__text-explanation {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 24px;
+  }
+
+  .research__link-explanation {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #D22856;
   }
 }
 
@@ -26,5 +58,9 @@
   .research {
     display: block;
     background-color: #F2F2F2;
+  }
+
+  .research__text-explanation {
+    width: 534px;
   }
 }
