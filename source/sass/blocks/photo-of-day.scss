@@ -1,6 +1,6 @@
 .photo-of-day__image-block {
   min-height: 137px;
-  background-image: url(/source/img/panorama-photo-of-day.jpg);
+  background-image: url("/img/panorama-photo-of-day.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10,7 +10,7 @@
 }
 
 .photo-of-day__mark {
-  background-color: #D22856;
+  background-color: #d22856;
   width: 140px;
   text-align: center;
   margin-left: auto;

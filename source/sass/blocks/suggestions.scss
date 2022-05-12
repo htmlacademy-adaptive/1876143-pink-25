@@ -1,5 +1,5 @@
 .suggestions {
-  background-image: url(/source/img/grey-background-suggestions.svg);
+  background-image: url("/img/grey-background-suggestions.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 169px;
@@ -42,7 +42,7 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  color: #000;
+  color: #000000;
   margin: 0 0 24px;
 }
 
@@ -80,7 +80,7 @@
 
 .suggestions__footer {
   height: 45px;
-  background-color: #fff;
+  background-color: #ffffff;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -213,6 +213,6 @@
   .suggestions__footer {
     display: block;
     bottom: 211px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 }

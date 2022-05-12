@@ -97,6 +97,9 @@
     width: 22px;
     height: 41px;
     margin-top: 20px;
+    position: relative;
+    background: none;
+    border: none;
   }
 
   .reviews__arrow-right {
@@ -104,6 +107,9 @@
     width: 22px;
     height: 41px;
     margin-top: 20px;
+    position: relative;
+    background: none;
+    border: none;
   }
 
   .reviews__image-quotes {
@@ -112,17 +118,10 @@
     margin-bottom: 58px;
   }
 
-  .reviews__arrow-left {
-    position: relative;
-    background: none;
-    border: none;
-  }
-
   .reviews__arrow-left::before {
     content: "";
-    background-image: url(/img/left-arrow.svg);
+    background-image: url("/img/left-arrow.svg");
     background-repeat: no-repeat;
-    position: absolute;
     position: absolute;
     width: 22px;
     height: 41px;
@@ -130,17 +129,10 @@
     left: 0;
   }
 
-  .reviews__arrow-right {
-    position: relative;
-    background: none;
-    border: none;
-  }
-
   .reviews__arrow-right::before {
     content: "";
-    background-image: url(/img/right-arrow.svg);
+    background-image: url("/img/right-arrow.svg");
     background-repeat: no-repeat;
-    position: absolute;
     position: absolute;
     width: 22px;
     height: 41px;

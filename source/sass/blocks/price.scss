@@ -20,7 +20,7 @@
 .price__tariff-plan-hit::before {
   content: "";
   position: absolute;
-  background-image: url(/source/img/hit-ribbon.svg);
+  background-image: url("/img/hit-ribbon.svg");
   background-repeat: no-repeat;
   width: 74px;
   height: 74px;
@@ -64,9 +64,9 @@
 
 .price__facilities {
   width: 100%;
-  background: #FFFFFF;
-  border-bottom: 2px solid #E5E5E5;
-  border-radius: 1px 0px 0px 0px;
+  background: #ffffff;
+  border-bottom: 2px solid #e5e5e5;
+  border-radius: 1px 0 0 0;
   padding: 24px 20px 25px 20px;
   display: flex;
 }
@@ -102,7 +102,6 @@
   .price__empty-cell {
     width: 25%;
     border-bottom: 2px solid #f2f2f2;
-
   }
 
   .price__tariff-plan {
@@ -136,61 +135,61 @@
   .price__base-first-row {
     grid-column: 2/3;
     display: block;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     grid-row: 2/3;
   }
 
   .price__base-second-row {
     grid-column: 2/3;
     display: block;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     grid-row: 3/4;
-}
+  }
 
   .price__base-third-row {
     grid-column: 2/3;
     display: block;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
   }
 
   .price__smile-first-row {
     grid-column: 3/4;
     display: block;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     grid-row: 2/3;
   }
 
   .price__smile-second-row {
     grid-column: 3/4;
     display: block;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     grid-row: 3/4;
   }
 
   .price__smile-third-row {
     grid-column: 3/4;
     display: block;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
   }
 
   .price__comments-first-row {
     grid-column: 4/5;
     display: block;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     grid-row: 2/3;
   }
 
   .price__comments-second-row {
     grid-column: 4/5;
     display: block;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     grid-row: 3/4;
   }
 
   .price__comments-third-row {
     grid-column: 4/5;
     display: block;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
   }
 
   .price__tariff-plan-hit::before {
