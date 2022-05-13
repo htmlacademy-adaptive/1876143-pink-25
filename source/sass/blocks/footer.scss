@@ -5,10 +5,31 @@
   flex-direction: column;
 }
 
+.footer__logo {
+  padding-bottom: 38px;
+}
+
 .footer__social-list {
+  width: 180px;
+  margin: 0 auto;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.footer__social-link {
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  border-radius: 27px;
+  outline: 2px solid #f2f2f2;
+  position: relative;
+}
+
+.footer__social-link-image {
+  position: absolute;
+  top: 18px;
+  left: 18px;
 }
 
 @media (min-width: $tablet-width) {

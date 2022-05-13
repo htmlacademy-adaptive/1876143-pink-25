@@ -1,8 +1,13 @@
 .contacts__wrapper {
+  width: 100%;
   padding: 0 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.contacts__question {
+  padding-bottom: 45px;
 }
 
 .contacts__text {
@@ -11,7 +16,8 @@
   font-size: 24px;
   line-height: 55px;
   color: #283645;
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .contacts__explanation-text {
@@ -21,15 +27,18 @@
   line-height: 25px;
   color: #283645;
   text-align: center;
+  padding-bottom: 13px;
 }
+
 .contacts__phone-link {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  color: #D22856;
+  color: #d22856;
   text-align: center;
   text-decoration: none;
+  padding-bottom: 31px;
 }
 
 .contacts__ways {
@@ -70,6 +79,19 @@
   .contacts__visit {
     width: 100%;
   }
+
+  .contacts__question {
+    padding-bottom: 50px;
+  }
+
+
+  .contacts__text {
+    display: block;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -90,5 +112,9 @@
 
   .contacts__visit {
     width: 30%;
+  }
+
+  .contacts__explanation-text {
+    padding-bottom: 34px;
   }
 }

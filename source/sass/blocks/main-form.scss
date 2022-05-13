@@ -4,10 +4,7 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #D22856;
-}
-
-.main-form__personal-data {
+  color: #d22856;
   &--hidden {
     display: none;
   }
@@ -15,7 +12,6 @@
 
 .main-form__name {
   border: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
   padding: 0 20px;
@@ -32,14 +28,13 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   margin: 0;
 }
 
 .main-form__contacts {
   border: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
   padding: 0 20px;
@@ -48,17 +43,15 @@
 
 .main-form__apps {
   border: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   margin: 0;
 }
 
 .main-form__emotions {
   border: none;
-  padding: 0;
   padding: 0 20px;
   margin: 0;
 }
@@ -125,13 +118,13 @@
   }
 
   .main-form__apps {
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     grid-row: 2/3;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   .main-form__emotions {
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     padding-left: 60px;
     padding-top: 47px;
     padding-bottom: 53px;
@@ -143,8 +136,8 @@
   }
 
   .main-form__achivements {
-    border: 2px solid #E5E5E5;
-    background-color: #FFFFFF;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
   }
 
   .main-form__input {

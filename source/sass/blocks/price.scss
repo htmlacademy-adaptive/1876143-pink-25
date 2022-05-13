@@ -1,10 +1,43 @@
 .price__table {
   display: grid;
+  padding-bottom: 45px;
+  grid-template-columns: 100%;
 }
 
 .price__tariff-plan {
+  width: 100%;
+  padding: 19px 0 16px;
   background-color: #283645;
+  position: relative;
 }
+
+.price__tariff-plan-hit {
+  padding: 19px 0 35px;
+  background-color: #283645;
+  position: relative;
+}
+
+.price__tariff-plan-hit::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/hit-ribbon.svg");
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 74px;
+  top: 0;
+  left: 20px;
+}
+
+
+.price__tariff-plan-cell {
+  margin: 0;
+}
+
+.price__tariff-plan-list {
+  margin: 0;
+}
+
+
 .price__tariff-plan-hidden {
   display: none;
 }
@@ -26,7 +59,22 @@
   line-height: 30px;
   color: #ffffff;
   text-align: center;
+  margin: 0;
 }
+
+.price__facilities {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 2px solid #e5e5e5;
+  border-radius: 1px 0 0 0;
+  padding: 24px 20px 25px 20px;
+  display: flex;
+}
+
+.price__mark-hidden {
+  margin-left: auto;
+}
+
 
 .price__facilities-text {
   font-family: "Open Sans", sans-serif;
@@ -34,11 +82,26 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-transform: uppercase;
+}
+
+.price__mark {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .price__wrapper {
+    padding: 0 20px;
+  }
+
+  .price__table {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content  1fr 1fr 1fr;
+  }
+
   .price__empty-cell {
     width: 25%;
+    border-bottom: 2px solid #f2f2f2;
   }
 
   .price__tariff-plan {
@@ -47,9 +110,118 @@
 
   .price__tariff-plan-wrapper {
     display: flex;
+    grid-column: 1/5;
   }
 
   .price__tariff-plan-hidden {
     display: block;
+    grid-column: 1/5;
+  }
+
+  .price__facilities {
+    grid-column: 1/2;
+    width: inherit;
+    padding: 18px 15px 17px 15px;
+    border-left: 2px solid #f2f2f2;
+  }
+
+  .price__facilities-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+  }
+
+  .price__base-first-row {
+    grid-column: 2/3;
+    display: block;
+    border: 1px solid #e5e5e5;
+    grid-row: 2/3;
+  }
+
+  .price__base-second-row {
+    grid-column: 2/3;
+    display: block;
+    border: 1px solid #e5e5e5;
+    grid-row: 3/4;
+  }
+
+  .price__base-third-row {
+    grid-column: 2/3;
+    display: block;
+    border: 1px solid #e5e5e5;
+  }
+
+  .price__smile-first-row {
+    grid-column: 3/4;
+    display: block;
+    border: 1px solid #e5e5e5;
+    grid-row: 2/3;
+  }
+
+  .price__smile-second-row {
+    grid-column: 3/4;
+    display: block;
+    border: 1px solid #e5e5e5;
+    grid-row: 3/4;
+  }
+
+  .price__smile-third-row {
+    grid-column: 3/4;
+    display: block;
+    border: 1px solid #e5e5e5;
+  }
+
+  .price__comments-first-row {
+    grid-column: 4/5;
+    display: block;
+    border: 1px solid #e5e5e5;
+    grid-row: 2/3;
+  }
+
+  .price__comments-second-row {
+    grid-column: 4/5;
+    display: block;
+    border: 1px solid #e5e5e5;
+    grid-row: 3/4;
+  }
+
+  .price__comments-third-row {
+    grid-column: 4/5;
+    display: block;
+    border: 1px solid #e5e5e5;
+  }
+
+  .price__tariff-plan-hit::before {
+    content: "";
+    left: 0;
+  }
+
+  .price__mark {
+    display: block;
+  }
+
+
+  .price__mark-hidden {
+    display: none;
+  }
+
+
+  .price__marks-yes {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .price__marks-no {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__table {
+    margin: 0 65px;
   }
 }

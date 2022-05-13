@@ -1,6 +1,6 @@
 .represent {
-  background-color:  #1D2631;
-  padding: 0 20px;
+  background-color: #1d2631;
+  padding: 28px 20px 119px;
 }
 
 .represent__text-content {
@@ -10,8 +10,11 @@
 .represent__list {
   justify-content: space-around;
   display: flex;
+  align-items: center;
   list-style: none;
   padding: 0;
+  margin: 0 auto 31px;
+  width: 202px;
 }
 
 .represent__explanation {
@@ -19,13 +22,13 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .represent {
     width: 320px;
-    background-color: rgb(29, 38, 49,  0);
+    background-color: rgb(29, 38, 49, 0);
   }
 }
