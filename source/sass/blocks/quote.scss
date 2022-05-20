@@ -1,7 +1,7 @@
 .quote {
   margin: 0;
   text-align: left;
-  padding: 0 17px;
+  padding: 25px 17px;
 }
 
 .quote__author-name {
@@ -18,6 +18,7 @@
   font-size: 12px;
   line-height: 24px;
   color: #283645;
+  text-transform: uppercase;
 }
 
 .quote__comment {
@@ -25,7 +26,7 @@
 }
 
 .quote__comment-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-stack;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -34,6 +35,6 @@
 
 @media (min-width: $tablet-width) {
   .quote {
-    padding: 0 38px 0 30px;
+    padding: 30px 30px 32px;
   }
 }

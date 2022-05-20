@@ -1,3 +1,8 @@
+.photoes-of-users {
+  padding-top: 54px;
+}
+
+
 .photoes-of-users__invitation-text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -5,9 +10,28 @@
   line-height: 30px;
   color: #283645;
   text-align: center;
+  margin: 0 auto 73px;
+  width: 247px;
 }
 
 
 .photoes-of-users__invitation-wrapper {
   padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .photoes-of-users__invitation-text {
+    font-size: 18px;
+    min-width: 439px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photoes-of-users {
+    padding-top: 100px;
+  }
+
+  .photoes-of-users__invitation-text {
+    margin-bottom: 98px;
+  }
 }

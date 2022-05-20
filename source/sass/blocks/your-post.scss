@@ -1,5 +1,7 @@
 .your-post {
-  padding: 0 20px;
+  background: $background-color;
+  padding: 20px 20px 41px;
+  text-align: center;
 }
 
 .your-post__post-text {
@@ -13,10 +15,17 @@
 
 .your-post__post {
   width: 280px;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+  padding: 21px 0;
+  margin-bottom: 12px;
 }
 
 .your-post__cancel {
   width: 280px;
+  border: 3px solid rgb(40, 54, 69, 0.1);
+  border-radius: 30px;
+  padding: 21px 0;
 }
 
 .your-post__cancel-text {
@@ -34,6 +43,15 @@
   height: 2px;
   background-color: #283645;
   opacity: 0.1;
+  margin-bottom: 38px;
+}
+
+.your-post__separator-hidden {
+  display: none;
+}
+
+.your-post__control {
+  padding-top: 42px;
 }
 
 
@@ -55,5 +73,26 @@
     &--hidden {
       display: none;
     }
+  }
+
+  .your-post__post-buttons {
+    margin-left: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .your-post__post {
+    width: 183px;
+    margin-bottom: 0;
+  }
+
+  .your-post__cancel {
+    width: 183px;
+  }
+
+  .your-post__post-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
 }

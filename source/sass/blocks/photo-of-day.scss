@@ -14,6 +14,10 @@
   width: 140px;
   text-align: center;
   margin-left: auto;
+  margin-right: 20px;
+  min-height: 36px;
+  padding-top: 4px;
+  box-sizing: border-box;
 }
 
 .photo-of-day__text {
@@ -27,23 +31,43 @@
 }
 
 .photo-of-day__wrapper {
-  padding: 0 20px;
+  background: $background-color;
+  margin: 0 20px;
+  padding-top: 25px 0 26px;
 }
 
 
 @media (min-width: $tablet-width) {
   .photo-of-day__image-block {
-    padding: 70px 20px 0;
+    padding: 57px 20px 0;
     background-size: cover;
   }
 
   .photo-of-day__wrapper {
     position: relative;
+    padding-top: 0 0 26px;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .photo-of-day__likes {
     position: absolute;
     top: 0;
     right: 30px;
+    padding: 30px 28px 0 0;
+  }
+
+  .photo-of-day__mark {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-of-day__mark {
+    margin-right: 110px;
+  }
+
+  .photo-of-day__wrapper {
+    width: 940px;
   }
 }

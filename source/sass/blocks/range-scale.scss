@@ -2,15 +2,46 @@
   &--hidden {
     display: none;
   }
+  position: relative;
+  margin: 0 30px 27px;
+}
+
+.range-scale__range-bar {
+  width: 100%;
+  height: 2px;
+  left: 40px;
+  top: 3412px;
+  background: #283645;
+}
+
+.range-scale__range-toggle {
+  background: #ffffff;
+  border: 2px solid #d22856;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  position: absolute;
+  top: -7px;
+  right: 50px;
 }
 
 @media (min-width: $tablet-width) {
   .range-scale {
+    width: 220px;
+    margin: 20px 0 0;
+
     &--hidden {
       display: block;
     }
+
     &--delete {
       display: none;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-scale {
+    width: 288px;
   }
 }

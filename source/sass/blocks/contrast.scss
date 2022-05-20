@@ -1,0 +1,23 @@
+.contrast {
+  border: none;
+  background: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .contrast {
+    padding: 0;
+    width: 22px;
+  }
+
+  .contrast__svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contrast__svg {
+    width: 32px;
+    height: 32px;
+  }
+}
