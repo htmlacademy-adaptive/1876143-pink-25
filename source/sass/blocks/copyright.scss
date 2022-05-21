@@ -5,3 +5,24 @@
   line-height: 18px;
   color: #283645;
 }
+
+.copyright__link {
+  position: relative;
+  padding-right: 43px;
+}
+
+
+.copyright__link-image {
+  fill: #d22856;
+}
+
+
+.copyright__link-image:hover {
+  fill: #283645;
+}
+
+
+.copyright__link-image:active {
+  fill: rgb(40, 54, 69);
+  opacity: 0.3;
+}

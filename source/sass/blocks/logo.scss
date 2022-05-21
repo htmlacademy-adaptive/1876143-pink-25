@@ -1,3 +1,24 @@
+.logo__logo-icon-desktop {
+  display: none;
+}
+
+
+.logo__logo-icon {
+  fill: #ffffff;
+}
+
+
+.logo__logo-icon:hover {
+  fill: #d22856;
+}
+
+
+.logo__logo-icon:active {
+  fill: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+
+
 @media (min-width: $tablet-width) {
   .logo::before {
     content: "";
@@ -10,9 +31,74 @@
     bottom: -1px;
   }
 
+
   .logo {
     padding-left: 73px;
     position: relative;
     height: 33px;
+  }
+
+
+  .logo__dark {
+    padding-left: 0;
+  }
+
+
+  .logo__logo-icon-desktop {
+    display: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .logo::before {
+    content: " ";
+    background-image: url("/img/logotype-white-desktop.svg");
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    right: 100px;
+    bottom: -1px;
+    display: none;
+  }
+
+  .logo-footer::before {
+    content: " ";
+    background-image: url("/img/logo-dark-desktop.svg");
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    right: 78px;
+    bottom: 0;
+  }
+
+
+  .logo {
+    padding-left: 0;
+  }
+
+
+  .logo-footer {
+    position: relative;
+  }
+
+
+  .logo-footer__logo-icon-tablet {
+    display: none;
+  }
+
+
+  .logo__logo-icon-desktop {
+    display: block;
+  }
+
+
+  .logo__logo-icon {
+    display: none;
+  }
+
+
+  .logo__logo-icon-glass {
+    display: none;
   }
 }

@@ -1,0 +1,23 @@
+.fill {
+  border: none;
+  background: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .fill {
+    padding: 0;
+    width: 22px;
+  }
+
+  .fill__svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fill__svg {
+    width: 48px;
+    height: 43px;
+  }
+}

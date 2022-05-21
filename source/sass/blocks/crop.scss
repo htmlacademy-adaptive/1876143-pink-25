@@ -1,0 +1,24 @@
+.crop {
+  border: none;
+  background: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .crop {
+    padding: 0;
+    width: 22px;
+  }
+
+
+  .crop__svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .crop__svg {
+    width: 44px;
+    height: 44px;
+  }
+}

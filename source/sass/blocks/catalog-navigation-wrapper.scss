@@ -1,3 +1,11 @@
 .catalog-navigation-wrapper {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-navigation-wrapper {
+    padding-top: 32px;
+    padding-right: 90px;
+  }
+}
+

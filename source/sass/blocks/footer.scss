@@ -1,5 +1,5 @@
 .footer__wrapper {
-  padding: 0 20px;
+  padding: 40px 20px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -9,9 +9,15 @@
   padding-bottom: 38px;
 }
 
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer__social-list {
   width: 180px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -24,7 +30,20 @@
   border-radius: 27px;
   outline: 2px solid #f2f2f2;
   position: relative;
+  padding-top: 19px;
+  box-sizing: border-box;
 }
+
+
+.footer__social-link:hover {
+  outline: 3px solid  #283645;
+}
+
+
+.footer__social-link:active {
+  opacity: 0.3;
+}
+
 
 .footer__social-link-image {
   position: absolute;
@@ -36,5 +55,11 @@
   .footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding: 40px 252px 0;
   }
 }

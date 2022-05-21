@@ -26,6 +26,7 @@
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgb(255 255 255 / 15%);
 }
 
+
 @media (min-width: $desktop-width) {
   .site-list {
     flex-direction: row;
@@ -39,14 +40,10 @@
     box-shadow: none;
   }
 
-  .site-list__item:first-child {
-    display: none;
-  }
-
   .site-list__link {
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    text-transform: lowercase;
+    text-transform: none;
   }
 }

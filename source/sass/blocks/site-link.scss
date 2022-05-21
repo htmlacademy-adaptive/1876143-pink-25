@@ -1,4 +1,29 @@
 .site-link {
   color: #ffffff;
   text-decoration: none;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.site-link:hover {
+  color: #d22856;
+}
+
+
+.site-link:active {
+  color: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+
+
+.site-link:focus {
+  border-bottom: 2px solid #ffffff;
+}
+
+@media (min-width: $desktop-width) {
+  .site-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }

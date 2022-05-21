@@ -1,5 +1,5 @@
 .likes {
-  padding: 0 30px;
+  padding: 0 17px 26px;
 }
 
 .likes__text {
@@ -9,7 +9,21 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #d22856;
+  position: relative;
+  padding-left: 30px;
 }
+
+.likes__text::before {
+  content: " ";
+  background-image: url("/source/img/heart.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
 
 .likes__number {
   font-family: "Open Sans", sans-serif;
@@ -18,4 +32,44 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .likes__text::before {
+    content: " ";
+    background-image: url("/source/img/heart.svg");
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: none;
+  }
+
+
+  .likes__text::after {
+    content: " ";
+    background-image: url("/source/img/heart.svg");
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    left: 240px;
+  }
+
+  .likes__text {
+    padding-left: 15px;
+  }
+
+  .likes__text-photo-of-day::after {
+    background-image: url("/source/img/heart.svg");
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    left: 119px;
+  }
 }
