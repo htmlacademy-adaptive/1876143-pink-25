@@ -16,7 +16,25 @@
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+
 }
+
+.site-list__link:hover {
+  color: #d22856;
+}
+
+
+.site-list__link:active {
+  color: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+
+
+.site-list__link:focus {
+  border-bottom: 2px solid #ffffff;
+  display: block;
+}
+
 
 .site-list__item {
   background-color: #283645;
@@ -25,6 +43,7 @@
   padding: 22px 18px;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgb(255 255 255 / 15%);
 }
+
 
 
 @media (min-width: $desktop-width) {
