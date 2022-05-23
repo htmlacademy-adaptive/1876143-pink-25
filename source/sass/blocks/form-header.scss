@@ -1,9 +1,14 @@
 .form-header {
   background-color: #173c70;
-  background-image: url("/img/back-mobile.jpg");
+  background-image: url("/source/img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 84px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/source/img/back-mobile@2x.jpg");
+    background-size: cover;
+    }
 }
 
 .form-header__navigaition-block {
@@ -13,11 +18,33 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+@media (min-width: $tablet-width) {
+  .catalog-header {
+    background-image: url("/source/img/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: max-content;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/source/img/back-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+
 @media (min-width: $desktop-width) {
   .form-header {
+    background-image: url("/source/img/back-desktop.jpg");
+    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/source/img/back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .form-header__navigaition-block {

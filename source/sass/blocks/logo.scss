@@ -1,41 +1,73 @@
-.logo__logo-icon-desktop {
-  display: none;
-}
-
-
-.logo__logo-icon {
+.logo__white{
   fill: #ffffff;
 }
 
-
-.logo__logo-icon:hover {
+.logo__white:hover {
   fill: #d22856;
 }
 
-
-.logo__logo-icon:active {
-  fill: rgb(255, 255, 255);
+.logo__white:active {
+  fill: #ffffff;
   opacity: 0.3;
 }
 
 
+.logo__white-tablet {
+  fill: #ffffff;
+  display: none;
+}
+
+.logo__white-tablet:hover {
+  fill: #d22856;
+}
+
+
+.logo__white-tablet:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+
+.logo__white-desktop {
+  fill: #ffffff;
+  display: none;
+}
+
+.logo__white-desktop:hover {
+  fill: #d22856;
+}
+
+
+.logo__white-desktop:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+
+.logo__black-text-desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .logo::before {
-    content: "";
-    background-image: url("/img/logotype-white-tablet.svg");
-    width: 60px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    right: 87px;
-    bottom: -1px;
-  }
-
-
   .logo {
     padding-left: 73px;
     position: relative;
     height: 33px;
+  }
+
+
+  .logo__white {
+    display: none;
+  }
+
+
+  .logo__white-tablet {
+    display: block;
+  }
+
+
+  .logo__white-desktop {
+    display: none;
   }
 
 
@@ -44,61 +76,50 @@
   }
 
 
-  .logo__logo-icon-desktop {
-    display: none;
+  .logo__white-icon {
+    width: 145px;
+    height: 40px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
-  .logo::before {
-    content: " ";
-    background-image: url("/img/logotype-white-desktop.svg");
-    width: 60px;
-    height: 40px;
-    position: absolute;
-    right: 100px;
-    bottom: -1px;
+  .logo__white {
     display: none;
   }
 
-  .logo-footer::before {
-    content: " ";
-    background-image: url("/img/logo-dark-desktop.svg");
-    width: 60px;
-    height: 40px;
-    position: absolute;
-    right: 78px;
-    bottom: 0;
+
+  .logo__white-tablet {
+    display: none;
+  }
+
+
+  .logo__white-desktop {
+    display: block;
+  }
+
+
+  .logo__red-glasses {
+    display: none;
+  }
+
+
+  .logo__black-text-desktop {
+    display: block;
+  }
+
+
+  .logo__black-text {
+    order: 2;
   }
 
 
   .logo {
-    padding-left: 0;
+      display: flex;
   }
 
 
   .logo-footer {
     position: relative;
-  }
-
-
-  .logo-footer__logo-icon-tablet {
-    display: none;
-  }
-
-
-  .logo__logo-icon-desktop {
-    display: block;
-  }
-
-
-  .logo__logo-icon {
-    display: none;
-  }
-
-
-  .logo__logo-icon-glass {
-    display: none;
   }
 }

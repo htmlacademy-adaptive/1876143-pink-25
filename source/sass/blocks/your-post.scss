@@ -78,6 +78,11 @@
   .your-post__post-buttons {
     margin-left: 42px;
   }
+
+  .your-post__image {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
