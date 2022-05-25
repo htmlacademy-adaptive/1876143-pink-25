@@ -6,11 +6,12 @@
   padding-bottom: 84px;
 
 
- @media (min-resolution: 2dppx) {
-  background-image: url("/source/img/back-mobile@2x.jpg");
-  background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url("/source/img/back-mobile@2x.jpg");
+    background-size: cover;
   }
 }
+
 
 .catalog-header__navigaition-block {
   padding: 22px 20px 21px;
@@ -38,11 +39,11 @@
     height: max-content;
     padding-bottom: 143px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("/source/img/back-tablet@2x.jpg");
-    background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("/source/img/back-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
-}
 
   .catalog-header__page-title {
     margin: 81px auto 0;

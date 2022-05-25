@@ -11,9 +11,9 @@
 
 
   @media (min-resolution: 2dppx) {
-      background-image: url("/img/back-mobile@2x.jpg");
-      background-size: cover;
-    }
+    background-image: url("/img/back-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 
@@ -65,12 +65,12 @@
     background-size: cover;
     height: 729px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("/img/back-tablet@2x.jpg");
-    height: 729px;
-    background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/back-tablet@2x.jpg");
+      height: 729px;
+      background-size: cover;
+    }
   }
-}
 
   .main-header__image {
     display: none;
@@ -131,6 +131,7 @@
       background-size: cover;
     }
   }
+
   .main-header__slogan {
     width: 300px;
   }
