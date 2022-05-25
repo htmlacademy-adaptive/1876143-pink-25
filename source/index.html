@@ -10,6 +10,9 @@
   <link rel="icon" href="img/favicons/16.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/152.svg">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <title>index</title>
 </head>
@@ -201,7 +204,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="/img/mobile-in-hand-desktop.svg 1x, /img/mobile-in-hand-desktop@2x.png 2x">
         <source media="(min-width: 660px)" srcset="/img/mobile-in-hand-tablet.png 1x, /img/mobile-in-hand-tablet@2x.png 2x">
-        <img class="main-header__image" src="/img/mobile-in-hand.png" srcset="/img/mobile-in-hand@2x.png 2x" alt="телефон в руке." width="320" height="286">
+        <img class="main-header__image" src="/img/mobile-in-hand.png" loading="lazy" srcset="/img/mobile-in-hand@2x.png 2x" alt="телефон в руке." width="320" height="286">
       </picture>
       <div class="represent">
         <h1 class="visually-hidden">Пинк-удивительное приложение</h1>
@@ -260,17 +263,17 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="/img/white-black-photo.svg">
                 <source media="(min-width: 660px)" srcset="/img/mobile-hellow-tablet.svg">
-                <img class="suggestion__image-smile" width="157" height="320" src="/img/suggestion-image-smile.svg.svg" alt="розовое фото мусорных баков со смайлом">
+                <img class="suggestion__image-smile" width="157" height="320" loading="lazy" src="/img/suggestion-image-smile.svg.svg" alt="розовое фото мусорных баков со смайлом">
               </picture>
-              <img class="suggestion__image-shadow" src="/img/shadow.svg" alt="тень">
+              <img class="suggestion__image-shadow" src="/img/shadow.svg" loading="lazy" alt="тень">
             </li>
             <li class="suggestion__images-item">
-              <img class="suggestion-image" src="/img/mobile-rubbish-pink-desktop.svg" width="186" height="382" alt="черно-белое фото мусорных баков">
-              <img class="suggestion__image-shadow" src="/img/shadow.svg" alt="тень">
+              <img class="suggestion-image" src="/img/mobile-rubbish-pink-desktop.svg" loading="lazy" width="186" height="382" alt="черно-белое фото мусорных баков">
+              <img class="suggestion__image-shadow" src="/img/shadow.svg" loading="lazy" alt="тень">
             </li>
             <li class="suggestion__images-item">
-              <img class="suggestion-image" src="/img/suggestion-image-smile.svg.svg" alt="розовое фото мусорных баков со смайлом">
-              <img class="suggestion__image-shadow" src="/img/shadow.svg" alt="тень">
+              <img class="suggestion-image" src="/img/suggestion-image-smile.svg.svg" loading="lazy" alt="розовое фото мусорных баков со смайлом">
+              <img class="suggestion__image-shadow" src="/img/shadow.svg" loading="lazy" alt="тень">
             </li>
           </ul>
         </div>
@@ -281,7 +284,7 @@
       <div class="research__wrapper">
         <picture>
           <source media="(min-width: 1200px)" srcset="/img/round-diagram-desktop.png">
-          <img class="research__image" src="/img/round-diagram.png" alt="круговая диаграмма в виде часов" width="238"
+          <img class="research__image" src="/img/round-diagram.png" loading="lazy" alt="круговая диаграмма в виде часов" width="238"
           height="276">
         </picture>
         <div class="research__explanation">
