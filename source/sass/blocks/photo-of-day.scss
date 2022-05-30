@@ -1,11 +1,11 @@
 .photo-of-day__image-block {
   min-height: 137px;
-  background-image: url("/source/img/panorama-photo-of-day.jpg");
+  background-image: url("/img/panorama-photo-of-day.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/source/img/panorama-photo-of-day@2x.jpg");
+    background-image: url("/img/panorama-photo-of-day@2x.jpg");
     min-height: 137px;
     background-size: cover;
   }
@@ -27,7 +27,7 @@
 }
 
 .photo-of-day__text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
@@ -46,12 +46,12 @@
 @media (min-width: $tablet-width) {
   .photo-of-day__image-block {
     min-height: 509px;
-    background-image: url("/source/img/panorama-photo-of-day-tablet.jpg");
+    background-image: url("/img/panorama-photo-of-day-tablet.jpg");
     padding: 57px 20px 0;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/source/img/panorama-photo-of-day-tablet@2x.jpg");
+      background-image: url("/img/panorama-photo-of-day-tablet@2x.jpg");
       min-height: 509px;
       background-size: cover;
     }
@@ -79,13 +79,13 @@
 @media (min-width: $desktop-width) {
   .photo-of-day__image-block {
     min-height: 506px;
-    background-image: url("/source/img/panorama-photo-of-day-desktop.jpg");
+    background-image: url("/img/panorama-photo-of-day-desktop.jpg");
     padding: 57px 20px 0;
     background-size: cover;
 
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/source/img/panorama-photo-of-day-desktop@2x.jpg");
+      background-image: url("/img/panorama-photo-of-day-desktop@2x.jpg");
       min-height: 506px;
       background-size: cover;
     }

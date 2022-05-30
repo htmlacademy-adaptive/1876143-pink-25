@@ -1,5 +1,5 @@
-@import "../variables.scss";
-@import "./blocks/fonts.scss";
+@import "../global/variables.scss";
+@import "../global/fonts.scss";
 @import "./blocks/main-body.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/represent.scss";
@@ -37,7 +37,7 @@
 @import "./blocks/form-main-navigation.scss";
 @import "./blocks/main-navigation-toggle.scss";
 @import "./blocks/main-navigation-toggle-close.scss";
-@import "./blocks/suggestion-image-smile.scss";
+//@import "./blocks/suggestion-image-smile.scss";
 @import "./blocks/crop.scss";
 @import "./blocks/fill.scss";
 @import "./blocks/contrast.scss";
