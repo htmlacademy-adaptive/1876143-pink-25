@@ -1,5 +1,5 @@
 .main-form__personal-data-header {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -15,7 +15,7 @@
 
 
 .main-form__personal-data-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -98,7 +98,7 @@
 
 
 .main-form__apps-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -112,7 +112,7 @@
 
 .main-form__apps-text::before {
   content: " ";
-  background-image: url("/source/img/radio-mark-empty.svg");
+  background-image: url("/img/radio-mark-empty.svg");
   background-repeat: no-repeat;
   position: absolute;
   width: 42px;
@@ -123,7 +123,7 @@
 
 .main-form__apps-input[type="radio"]:checked + .main-form__apps-example::before {
   content: " ";
-  background-image: url("/source/img/radio-mark.svg");
+  background-image: url("/img/radio-mark.svg");
   background-repeat: no-repeat;
   position: absolute;
   width: 42px;
@@ -140,7 +140,7 @@
 }
 
 .main-form__input {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -154,7 +154,7 @@
 }
 
 .main-form__achivements-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -168,7 +168,7 @@
 
 .main-form__achivements-text::before {
   content: " ";
-  background-image: url("/source/img/input-mark-empty.svg");
+  background-image: url("/img/input-mark-empty.svg");
   background-repeat: no-repeat;
   position: absolute;
   width: 47px;
@@ -179,7 +179,7 @@
 
 .main-form__choise[type="checkbox"]:checked + .main-form__achivements-example::before {
   content: " ";
-  background-image: url("/source/img/input-mark.svg");
+  background-image: url("/img/input-mark.svg");
   background-repeat: no-repeat;
   position: absolute;
   width: 47px;
@@ -233,7 +233,7 @@
 
   .main-form__contacts-phone::after {
     content: " ";
-    background-image: url("/source/img/phone-icon.svg");
+    background-image: url("/img/phone-icon.svg");
     background-repeat: no-repeat;
     position: absolute;
     width: 59px;
@@ -252,7 +252,7 @@
 
   .main-form__contacts-mail::after {
     content: " ";
-    background-image: url("/source/img/mail-icon.svg");
+    background-image: url("/img/mail-icon.svg");
     background-repeat: no-repeat;
     position: absolute;
     width: 59px;
@@ -424,7 +424,6 @@
   }
 
   .main-form__personal-data-text {
-    width: 200px;
     height: 20px;
     width: fit-content;
   }

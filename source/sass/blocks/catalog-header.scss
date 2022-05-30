@@ -1,16 +1,17 @@
 .catalog-header {
   background-color: #173c70;
-  background-image: url("/source/img/back-mobile.jpg");
+  background-image: url("/img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 84px;
 
 
- @media (min-resolution: 2dppx) {
-  background-image: url("/source/img/back-mobile@2x.jpg");
-  background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/back-mobile@2x.jpg");
+    background-size: cover;
   }
 }
+
 
 .catalog-header__navigaition-block {
   padding: 22px 20px 21px;
@@ -20,7 +21,7 @@
 }
 
 .catalog-header__page-title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -32,17 +33,17 @@
 
 @media (min-width: $tablet-width) {
   .catalog-header {
-    background-image: url("/source/img/back-tablet.jpg");
+    background-image: url("/img/back-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: max-content;
     padding-bottom: 143px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("/source/img/back-tablet@2x.jpg");
-    background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/back-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
-}
 
   .catalog-header__page-title {
     margin: 81px auto 0;
@@ -55,14 +56,14 @@
 
 @media (min-width: $desktop-width) {
   .catalog-header {
-    background-image: url("/source/img/back-desktop.jpg");
+    background-image: url("/img/back-desktop.jpg");
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 27.92% 1fr;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/source/img/back-desktop@2x.jpg");
+      background-image: url("/img/back-desktop@2x.jpg");
       background-size: cover;
     }
   }
